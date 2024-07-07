@@ -1,0 +1,21 @@
+version: '3'
+services:
+  weborder:
+    build: ./webOrder
+    ports:
+      - "3001:3001"
+
+  ordertracking:
+    build: ./orderTracking
+    ports:
+      - "3002:3002"
+
+  orderconfirmation:
+    build: ./orderConfirmation
+    ports:
+      - "3003:3003"
+
+  deliveryconfirmation:
+    build: ./deliveryConfirmation
+    ports:
+      - "3004:3004"
