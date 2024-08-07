@@ -19,3 +19,8 @@ services:
     build: ./deliveryConfirmation
     ports:
       - "3004:3004"
+
+  newservice:
+    build: ./newService
+    ports:
+      - "3005:3005"

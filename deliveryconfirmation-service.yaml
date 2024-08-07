@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.34.0 (HEAD)
+  labels:
+    io.kompose.service: deliveryconfirmation
+  name: deliveryconfirmation
+spec:
+  ports:
+    - name: "3004"
+      port: 3004
+      targetPort: 3004
+  selector:
+    io.kompose.service: deliveryconfirmation
